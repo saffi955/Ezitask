@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block authentication %}
+<a href="{% url 'signin' %}">SignIn</a>
+{% endblock %}
+
+{% block content %}
+<h1>SIGNUP</h1>
+<form action="" method="post">
+<span>
+    <label for="profile_image">Upload Profile Picture</label>
+    <input type="file" id="profile_image" name="profile_image">
+</span>
+<span>
+    <input type="text" required placeholder="First Name..">
+</span>
+<span>
+    <input type="text" required placeholder="Last Name..">
+</span>
+<span>
+    <input type="email" required placeholder="Email Address..">
+</span>
+<span>
+    <input type="password" required placeholder="Password">
+</span>
+<span>
+    <input type="password" required placeholder="Confirm Password">
+</span>
+
+    <input type="submit">
+</form>
+
+{% endblock %}
