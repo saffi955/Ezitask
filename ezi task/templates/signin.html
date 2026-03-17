@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block authentication %}
+<a href="{% url 'signup' %}">SignUp</a>
+{% endblock %}
+
+{% block content %}
+<h1>SIGNIN</h1>
+<form action="" method="post">
+<span>
+    <input id="username" type="text" required placeholder="UserName..">
+</span>
+<span>
+    <input type="password" required placeholder="Password..">
+</span>
+    <input type="submit">
+</form>
+
+{% endblock %}
